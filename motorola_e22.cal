@@ -1,0 +1,8 @@
+# Calibracion Micrófono Motorola Moto E22
+# Frecuencia(Hz) Corrección(dB)
+20.0    -3.2
+63.0    -1.5
+125.0    0.8
+1000.0   0.0
+8000.0   1.4
+20000.0 -3.1

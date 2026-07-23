@@ -1,0 +1,14 @@
+# Calibracion Micrófono Motorola - Motorola Moto E20
+# Gama de hardware simulada: LOW
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-10.7 
+50.0    	-7.0  
+100.0   	-4.1  
+200.0   	-0.9  
+500.0   	0.0   
+1000.0  	0.2   
+2000.0  	1.0   
+5000.0  	3.5   
+10000.0 	2.9   
+15000.0 	-2.2  
+20000.0 	-8.3  

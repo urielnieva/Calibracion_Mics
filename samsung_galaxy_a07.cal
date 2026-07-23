@@ -1,0 +1,14 @@
+# Calibracion Micrófono Samsung - Samsung Galaxy A07
+# Gama de hardware simulada: LOW
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-13.4 
+50.0    	-6.5  
+100.0   	-4.6  
+200.0   	-1.4  
+500.0   	-0.1  
+1000.0  	0.0   
+2000.0  	1.2   
+5000.0  	3.3   
+10000.0 	2.8   
+15000.0 	-3.7  
+20000.0 	-9.2  

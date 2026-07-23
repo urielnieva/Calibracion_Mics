@@ -1,0 +1,14 @@
+# Calibracion Micrófono Samsung - Samsung Galaxy A04
+# Gama de hardware simulada: LOW
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-13.7 
+50.0    	-6.4  
+100.0   	-5.0  
+200.0   	-1.0  
+500.0   	-0.2  
+1000.0  	-0.1  
+2000.0  	1.7   
+5000.0  	3.6   
+10000.0 	3.3   
+15000.0 	-4.9  
+20000.0 	-13.9 

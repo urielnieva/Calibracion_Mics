@@ -1,0 +1,14 @@
+# Calibracion Micrófono Xiaomi - Xiaomi Redmi 12
+# Gama de hardware simulada: LOW
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-10.6 
+50.0    	-8.9  
+100.0   	-3.4  
+200.0   	-1.5  
+500.0   	-0.2  
+1000.0  	0.1   
+2000.0  	1.1   
+5000.0  	4.0   
+10000.0 	2.8   
+15000.0 	-2.4  
+20000.0 	-9.9  

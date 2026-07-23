@@ -1,0 +1,14 @@
+# Calibracion Micrófono Realme - Realme 11
+# Gama de hardware simulada: MID
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-7.9  
+50.0    	-4.3  
+100.0   	-1.9  
+200.0   	-0.3  
+500.0   	0.1   
+1000.0  	-0.1  
+2000.0  	0.6   
+5000.0  	2.5   
+10000.0 	2.0   
+15000.0 	-2.2  
+20000.0 	-5.8  

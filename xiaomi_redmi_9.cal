@@ -1,0 +1,14 @@
+# Calibracion Micrófono Xiaomi - Xiaomi Redmi 9
+# Gama de hardware simulada: LOW
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-11.3 
+50.0    	-7.0  
+100.0   	-5.4  
+200.0   	-1.4  
+500.0   	-0.2  
+1000.0  	-0.1  
+2000.0  	1.9   
+5000.0  	4.0   
+10000.0 	3.2   
+15000.0 	-2.1  
+20000.0 	-8.2  

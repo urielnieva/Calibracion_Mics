@@ -1,0 +1,14 @@
+# Calibracion Micrófono Motorola - Motorola Moto G54
+# Gama de hardware simulada: MID
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-8.4  
+50.0    	-4.4  
+100.0   	-1.8  
+200.0   	-0.8  
+500.0   	-0.1  
+1000.0  	-0.0  
+2000.0  	1.0   
+5000.0  	2.7   
+10000.0 	1.9   
+15000.0 	-1.9  
+20000.0 	-4.8  

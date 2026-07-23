@@ -4,7 +4,7 @@ import random
 # Definición de los modelos y su gama correspondiente (high, mid, low)
 # Hemos reunido más de 100 teléfonos Android muy populares de los últimos años.
 dispositivos = [
-    # Samsung (40 modelos)
+    # Samsung (Gama A, S, Note con variantes Plus, Ultra y FE)
     {"nombre": "samsung_galaxy_a01", "gama": "low", "marca": "Samsung"},
     {"nombre": "samsung_galaxy_a02", "gama": "low", "marca": "Samsung"},
     {"nombre": "samsung_galaxy_a03", "gama": "low", "marca": "Samsung"},
@@ -35,16 +35,52 @@ dispositivos = [
     {"nombre": "samsung_galaxy_a54", "gama": "mid", "marca": "Samsung"},
     {"nombre": "samsung_galaxy_a55", "gama": "mid", "marca": "Samsung"},
     {"nombre": "samsung_galaxy_a56", "gama": "mid", "marca": "Samsung"},
+    
+    # Samsung S20
     {"nombre": "samsung_galaxy_s20", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s20_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s20_ultra", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s20_fe", "gama": "high", "marca": "Samsung"},
+    
+    # Samsung S21
     {"nombre": "samsung_galaxy_s21", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s21_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s21_ultra", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s21_fe", "gama": "high", "marca": "Samsung"},
+    
+    # Samsung S22
     {"nombre": "samsung_galaxy_s22", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s22_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s22_ultra", "gama": "high", "marca": "Samsung"},
+    
+    # Samsung S23
     {"nombre": "samsung_galaxy_s23", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s23_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s23_ultra", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s23_fe", "gama": "high", "marca": "Samsung"},
+    
+    # Samsung S24
     {"nombre": "samsung_galaxy_s24", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s24_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s24_ultra", "gama": "high", "marca": "Samsung"},
+    
+    # Samsung S25
     {"nombre": "samsung_galaxy_s25", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s25_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s25_ultra", "gama": "high", "marca": "Samsung"},
+    
+    # Samsung S26
     {"nombre": "samsung_galaxy_s26", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s26_plus", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_s26_ultra", "gama": "high", "marca": "Samsung"},
+    
+    # Note Series
+    {"nombre": "samsung_galaxy_note10", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_note10_plus", "gama": "high", "marca": "Samsung"},
     {"nombre": "samsung_galaxy_note20", "gama": "high", "marca": "Samsung"},
+    {"nombre": "samsung_galaxy_note20_ultra", "gama": "high", "marca": "Samsung"},
 
-    # Xiaomi / Redmi / Poco (30 modelos)
+    # Xiaomi / Redmi / Poco (Con variantes Pro, Ultra y Lite)
     {"nombre": "xiaomi_redmi_9", "gama": "low", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_9a", "gama": "low", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_10", "gama": "low", "marca": "Xiaomi"},
@@ -54,27 +90,51 @@ dispositivos = [
     {"nombre": "xiaomi_redmi_13", "gama": "low", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_13c", "gama": "low", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_14c", "gama": "low", "marca": "Xiaomi"},
+    
+    # Redmi Note
     {"nombre": "xiaomi_redmi_note_10", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_redmi_note_10_pro", "gama": "mid", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_note_11", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_redmi_note_11_pro", "gama": "mid", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_note_12", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_redmi_note_12_pro", "gama": "mid", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_note_13", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_redmi_note_13_pro", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_redmi_note_13_pro_plus", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_redmi_note_14", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_redmi_note_14_pro", "gama": "mid", "marca": "Xiaomi"},
+    
+    # Poco Series
     {"nombre": "xiaomi_poco_m3", "gama": "low", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_m4", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_poco_m4_pro", "gama": "mid", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_m5", "gama": "mid", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_x3", "gama": "mid", "marca": "Xiaomi"},
-    {"nombre": "xiaomi_poco_x4", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_poco_x3_pro", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_poco_x4_pro", "gama": "mid", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_x5", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_poco_x5_pro", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_x6", "gama": "mid", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_poco_x6_pro", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_f3", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_f4", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_poco_f5", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_poco_f5_pro", "gama": "high", "marca": "Xiaomi"},
+    
+    # Xiaomi Flagships
     {"nombre": "xiaomi_mi_11t", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_mi_11t_pro", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_12", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_12_pro", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_12_ultra", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_13", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_13_pro", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_13_ultra", "gama": "high", "marca": "Xiaomi"},
     {"nombre": "xiaomi_14", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_14_pro", "gama": "high", "marca": "Xiaomi"},
+    {"nombre": "xiaomi_14_ultra", "gama": "high", "marca": "Xiaomi"},
 
-    # Motorola (20 modelos)
+    # Motorola (Con variantes Pro, Ultra y Plus)
     {"nombre": "motorola_moto_e7", "gama": "low", "marca": "Motorola"},
     {"nombre": "motorola_moto_e13", "gama": "low", "marca": "Motorola"},
     {"nombre": "motorola_moto_e20", "gama": "low", "marca": "Motorola"},
@@ -86,17 +146,28 @@ dispositivos = [
     {"nombre": "motorola_moto_g22", "gama": "low", "marca": "Motorola"},
     {"nombre": "motorola_moto_g23", "gama": "low", "marca": "Motorola"},
     {"nombre": "motorola_moto_g24", "gama": "low", "marca": "Motorola"},
+    {"nombre": "motorola_moto_g24_power", "gama": "low", "marca": "Motorola"},
     {"nombre": "motorola_moto_g30", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_g50", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_g53", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_g54", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_g73", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_g84", "gama": "mid", "marca": "Motorola"},
+    
+    # Edge Series
     {"nombre": "motorola_moto_edge_30", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_30_pro", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_30_ultra", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_30_neo", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_edge_40", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_40_pro", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_40_neo", "gama": "mid", "marca": "Motorola"},
     {"nombre": "motorola_moto_edge_50", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_50_pro", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_50_ultra", "gama": "high", "marca": "Motorola"},
+    {"nombre": "motorola_moto_edge_50_neo", "gama": "mid", "marca": "Motorola"},
 
-    # Oppo (8 modelos)
+    # Oppo (Con variantes Pro y Plus)
     {"nombre": "oppo_a15", "gama": "low", "marca": "Oppo"},
     {"nombre": "oppo_a16", "gama": "low", "marca": "Oppo"},
     {"nombre": "oppo_a17", "gama": "low", "marca": "Oppo"},
@@ -107,9 +178,14 @@ dispositivos = [
     {"nombre": "oppo_a78", "gama": "mid", "marca": "Oppo"},
     {"nombre": "oppo_reno_7", "gama": "mid", "marca": "Oppo"},
     {"nombre": "oppo_reno_8", "gama": "high", "marca": "Oppo"},
+    {"nombre": "oppo_reno_8_pro", "gama": "high", "marca": "Oppo"},
     {"nombre": "oppo_reno_10", "gama": "high", "marca": "Oppo"},
+    {"nombre": "oppo_reno_10_pro", "gama": "high", "marca": "Oppo"},
+    {"nombre": "oppo_find_x5", "gama": "high", "marca": "Oppo"},
+    {"nombre": "oppo_find_x5_pro", "gama": "high", "marca": "Oppo"},
+    {"nombre": "oppo_find_x6_pro", "gama": "high", "marca": "Oppo"},
 
-    # Realme (8 modelos)
+    # Realme (Con variantes Pro y Plus)
     {"nombre": "realme_c11", "gama": "low", "marca": "Realme"},
     {"nombre": "realme_c21", "gama": "low", "marca": "Realme"},
     {"nombre": "realme_c30", "gama": "low", "marca": "Realme"},
@@ -118,24 +194,69 @@ dispositivos = [
     {"nombre": "realme_c53", "gama": "low", "marca": "Realme"},
     {"nombre": "realme_c55", "gama": "mid", "marca": "Realme"},
     {"nombre": "realme_10", "gama": "mid", "marca": "Realme"},
+    {"nombre": "realme_10_pro", "gama": "mid", "marca": "Realme"},
+    {"nombre": "realme_10_pro_plus", "gama": "high", "marca": "Realme"},
     {"nombre": "realme_11", "gama": "mid", "marca": "Realme"},
-    {"nombre": "realme_12", "gama": "high", "marca": "Realme"},
+    {"nombre": "realme_11_pro", "gama": "high", "marca": "Realme"},
+    {"nombre": "realme_11_pro_plus", "gama": "high", "marca": "Realme"},
+    {"nombre": "realme_12", "gama": "mid", "marca": "Realme"},
+    {"nombre": "realme_12_pro", "gama": "high", "marca": "Realme"},
+    {"nombre": "realme_12_pro_plus", "gama": "high", "marca": "Realme"},
 
-    # Vivo (6 modelos)
+    # Vivo (Con variantes Pro)
     {"nombre": "vivo_y16", "gama": "low", "marca": "Vivo"},
     {"nombre": "vivo_y20", "gama": "low", "marca": "Vivo"},
     {"nombre": "vivo_y21", "gama": "low", "marca": "Vivo"},
     {"nombre": "vivo_y22", "gama": "low", "marca": "Vivo"},
     {"nombre": "vivo_y35", "gama": "mid", "marca": "Vivo"},
     {"nombre": "vivo_v23", "gama": "high", "marca": "Vivo"},
+    {"nombre": "vivo_v25", "gama": "high", "marca": "Vivo"},
+    {"nombre": "vivo_v27_pro", "gama": "high", "marca": "Vivo"},
+    {"nombre": "vivo_x90_pro", "gama": "high", "marca": "Vivo"},
+    {"nombre": "vivo_x100_pro", "gama": "high", "marca": "Vivo"},
 
-    # OnePlus (6 modelos)
+    # OnePlus (Con variantes Pro y R)
     {"nombre": "oneplus_nord_n100", "gama": "low", "marca": "OnePlus"},
     {"nombre": "oneplus_nord_n200", "gama": "low", "marca": "OnePlus"},
     {"nombre": "oneplus_nord_ce_2", "gama": "mid", "marca": "OnePlus"},
     {"nombre": "oneplus_nord_ce_3", "gama": "mid", "marca": "OnePlus"},
+    {"nombre": "oneplus_10_pro", "gama": "high", "marca": "OnePlus"},
     {"nombre": "oneplus_11", "gama": "high", "marca": "OnePlus"},
-    {"nombre": "oneplus_12", "gama": "high", "marca": "OnePlus"}
+    {"nombre": "oneplus_12", "gama": "high", "marca": "OnePlus"},
+    {"nombre": "oneplus_12_r", "gama": "high", "marca": "OnePlus"},
+
+    # Apple iPhone (Completo: del iPhone 11 al 16 con Mini, Plus, Pro y Pro Max)
+    {"nombre": "apple_iphone_11", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_11_pro", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_11_pro_max", "gama": "high", "marca": "Apple"},
+    
+    {"nombre": "apple_iphone_12", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_12_mini", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_12_pro", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_12_pro_max", "gama": "high", "marca": "Apple"},
+    
+    {"nombre": "apple_iphone_13", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_13_mini", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_13_pro", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_13_pro_max", "gama": "high", "marca": "Apple"},
+    
+    {"nombre": "apple_iphone_14", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_14_plus", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_14_pro", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_14_pro_max", "gama": "high", "marca": "Apple"},
+    
+    {"nombre": "apple_iphone_15", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_15_plus", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_15_pro", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_15_pro_max", "gama": "high", "marca": "Apple"},
+    
+    {"nombre": "apple_iphone_16", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_16_plus", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_16_pro", "gama": "high", "marca": "Apple"},
+    {"nombre": "apple_iphone_16_pro_max", "gama": "high", "marca": "Apple"},
+    
+    {"nombre": "apple_iphone_se_2020", "gama": "mid", "marca": "Apple"},
+    {"nombre": "apple_iphone_se_2022", "gama": "mid", "marca": "Apple"}
 ]
 
 

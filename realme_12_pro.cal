@@ -1,0 +1,14 @@
+# Calibracion Micrófono Realme - Realme 12 Pro
+# Gama de hardware simulada: HIGH
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-3.6  
+50.0    	-4.3  
+100.0   	-1.1  
+200.0   	-0.0  
+500.0   	-0.1  
+1000.0  	0.1   
+2000.0  	0.4   
+5000.0  	0.9   
+10000.0 	0.9   
+15000.0 	0.4   
+20000.0 	-3.4  

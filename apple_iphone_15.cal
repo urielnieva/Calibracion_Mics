@@ -1,0 +1,14 @@
+# Calibracion Micrófono Apple - Apple Iphone 15
+# Gama de hardware simulada: HIGH
+# Frecuencia(Hz)	Corrección(dB)
+20.0    	-3.1  
+50.0    	-2.7  
+100.0   	-0.6  
+200.0   	-0.1  
+500.0   	-0.0  
+1000.0  	-0.1  
+2000.0  	0.3   
+5000.0  	1.0   
+10000.0 	1.0   
+15000.0 	-0.4  
+20000.0 	-3.0  

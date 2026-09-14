@@ -1,14 +1,39 @@
 # Calibracion Micrófono Samsung - Samsung Galaxy S23
-# Gama de hardware simulada: HIGH
+# MEDIDA REAL (no simulada) - 2026-09-13
+# Referencia: microfono de medicion calibrado + Smaart (TF / Leq A Slow), ruido rosa, 2 posiciones promediadas.
+# Nivel: el S23 marcaba 71.8 dBA contra 87 dBA de referencia -> offset de sensibilidad incluido en toda la curva (~+15 dB).
+# Convencion: el valor se SUMA al nivel medido (correccion, no respuesta del mic), igual que UNAnalyzer.
+# Incluye la compensacion de la inclinacion del RTA de la app (ruido rosa se ve plano como en Smaart).
+# Debajo de 50 Hz no hubo datos confiables: se mantiene el valor de 50 Hz.
 # Frecuencia(Hz)	Corrección(dB)
-20.0    	-3.1  
-50.0    	-3.3  
-100.0   	-1.2  
-200.0   	0.0   
-500.0   	0.1   
-1000.0  	0.0   
-2000.0  	0.0   
-5000.0  	0.8   
-10000.0 	0.8   
-15000.0 	0.5   
-20000.0 	-2.5  
+20.0    	16.5
+25.0    	16.4
+31.5    	16.4
+40.0    	16.3
+50.0    	15.9
+63.0    	15.5
+80.0    	14.0
+100.0   	10.8
+125.0   	8.9
+160.0   	8.9
+200.0   	7.8
+250.0   	7.0
+315.0   	7.2
+400.0   	7.9
+500.0   	9.2
+630.0   	11.6
+800.0   	14.9
+1000.0  	17.4
+1250.0  	17.7
+1600.0  	15.2
+2000.0  	13.1
+2500.0  	14.7
+3150.0  	17.6
+4000.0  	18.2
+5000.0  	17.7
+6300.0  	17.7
+8000.0  	18.1
+10000.0 	18.4
+12500.0 	17.9
+16000.0 	15.7
+20000.0 	10.8

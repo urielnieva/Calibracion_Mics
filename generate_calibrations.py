@@ -448,6 +448,13 @@ def reconstruir_readme():
 def main():
     print(f"Iniciando la generación de {len(dispositivos)} archivos de calibración...")
     for disp in dispositivos:
+        # No pisar calibraciones medidas de verdad
+        ruta = f"{disp['nombre']}.cal"
+        if os.path.exists(ruta):
+            with open(ruta, encoding="utf-8") as existente:
+                if "MEDIDA REAL" in existente.read(512):
+                    print(f"  Saltando {ruta} (medida real)")
+                    continue
         puntos = generar_curva(disp["gama"], disp["nombre"])
         escribir_archivo_cal(disp, puntos)
     

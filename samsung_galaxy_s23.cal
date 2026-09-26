@@ -1,11 +1,41 @@
 # Calibracion Micrófono Samsung - Samsung Galaxy S23
-# MEDIDA PARCIAL (real) - solo offset de nivel, curva plana - 2026-09-25
-# El S23 marcaba 71.8 dBA contra 87 dBA de un microfono de medicion calibrado (Smaart, ruido rosa).
-# Se aplica ese offset de sensibilidad (+15.2 dB) parejo en toda la banda.
-# La correccion por frecuencia queda PENDIENTE: las capturas anteriores se tomaron en otra
-# posicion y otro momento que la referencia, y la forma que salio de ahi no reproducia bien.
+# MEDIDA REAL - v1 - 2026-09-25
+# Camino de captura: UNPROCESSED, mono, 48 kHz, efectos de plataforma desactivados.
+# ESTA CURVA SOLO VALE PARA ESE CAMINO. Con CAMCORDER/MIC (ecualizacion de fabrica de
+# Samsung) la respuesta es otra y esta correccion queda mal.
+#
+# Origen: ruido rosa sobre un sistema que Smaart mide plano. Dos mediciones independientes
+# (RTA de la app y un WAV analizado por fuera) coinciden dentro de ~3 dB entre 400 Hz y 12.5k.
+# El rasgo dominante es la resonancia del puerto acustico del MEMS: +23 dB en 8k y +25 dB en 10k.
+#
+# Debajo de 400 Hz no se corrige: ahi manda la sala y la posicion (las dos mediciones difieren
+# hasta 18 dB). Entre 400 Hz y 4k la correccion se limito a +/-3 dB por la misma razon.
+#
+# Nivel: +15.2 dB de offset de sensibilidad en la banda media (medido 71.8 dBA contra 87 dBA
+# de referencia). PENDIENTE de re-verificar: ese anclaje se tomo con el camino de captura viejo.
+#
 # Convencion: el valor se SUMA al nivel medido (correccion, no respuesta del mic).
 # Frecuencia(Hz)	Corrección(dB)
 20.0    	15.2
-1000.0  	15.2
-20000.0 	15.2
+50.0    	15.2
+100.0   	15.2
+200.0   	15.2
+315.0   	15.2
+400.0   	13.2
+500.0   	12.2
+630.0   	17.3
+800.0   	18.2
+1000.0  	18.2
+1250.0  	14.3
+1600.0  	14.6
+2000.0  	14.3
+2500.0  	13.8
+3150.0  	13.8
+4000.0  	12.4
+5000.0  	8.9
+6300.0  	4.7
+8000.0  	-7.9
+10000.0 	-9.5
+12500.0 	5.5
+16000.0 	10.4
+20000.0 	6.9
